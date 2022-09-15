@@ -1,3 +1,3 @@
 # Boomnapp Docs
 
-## Coming soon
+### Coming soon
