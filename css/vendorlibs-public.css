@@ -2367,7 +2367,7 @@ a.btn.disabled, fieldset:disabled a.btn {
 
 .btn-link {
   font-weight: 400;
-  color: rgb(245, 245, 245);
+  color: #fff;
   text-decoration: none; }
 
 .btn-link:hover {
@@ -3518,7 +3518,11 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
 
 .navbar-expand .navbar-nav .nav-link {
   padding-right: .5rem;
-  padding-left: .5rem; }
+  padding-left: .5rem; 
+  color: rgba(255, 255, 255, 1) !important;}
+
+.navbar-expand .navbar-nav .nav-link:hover {
+  color: rgba(0, 0, 0, 0.9) !important;}
 
 .navbar-expand > .container, .navbar-expand > .container-fluid, .navbar-expand > .container-lg, .navbar-expand > .container-md, .navbar-expand > .container-sm, .navbar-expand > .container-xl {
   -ms-flex-wrap: nowrap;
