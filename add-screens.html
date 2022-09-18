@@ -1,0 +1,392 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content>
+  <meta name="author" content>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="user-scalable=1.0,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="description" property="og:description" content>
+  <meta name="keywordDescription" property="og:keywordDescription" content>
+  <meta name="keywordName" property="og:keywordName" content>
+  <meta name="keyword" content>
+  <meta name="title" content>
+  <meta name="store" content="BoomnApp Resources">
+  <title>BoomnApp Docs</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap" rel="stylesheet">
+
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  
+  <link href="css/document-editor.css" rel="stylesheet" type="text/css">
+  <link href="css/vendorlibs-public.css" rel="stylesheet" type="text/css">
+  <link href="css/vendorlibs-jquery-typeahead.css" rel="stylesheet" type="text/css">
+  <link href="css/public-assets-app.min.css" rel="stylesheet" type="text/css">
+  <link href="css/default.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="pt-4" onresize="changePanelHeight()">
+  <!--  NAVIGATION BAR -->
+  <nav class="navbar navbar-expand lw-nav-bg navbar-light fixed-top lw-main-navbar shadow">
+      <button class="navbar-toggler p-0 border-0 lw-sidebar-toggler d-block d-lg-none" type="button">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="https://boomnapp.com/">
+
+          <img class="lw-project-logo" src="images/logo.png" alt="Managing Admin Panel">
+      </a> <small class="lw-hidden-sm">
+          <a class="btn btn-link btn-sm" href="#"><span class="fas fa-home"></span> Docs Home</a>
+          <!-- <a class="btn btn-link btn-sm" href="#/contact-us"><span class="fas fa-envelope"></span> Contact Us</a> -->
+      </small>
+      <div class="lw-project-version-language-menu">
+          <ul class="navbar-nav my-2 my-md-0 lw-hidden-sm"> 
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle " href id="langDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  English</a>
+                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="langDropdown">
+                      <a class=" dropdown-item" href="#">English</a>
+                      <a class=" dropdown-item" href="#">Russian</a>
+                      <a class=" dropdown-item" href="#">Filipino</a>
+                  </div>
+              </li>
+              
+          </ul>
+      </div>
+  </nav>
+
+  <!-- NAVIGATION BAR -->
+  <div class="container-fluid lw-document">
+      <div class="row">
+          <!-- SIDEBAR SECTIONS -->
+          <nav class="col-lg-3 navbar-light lw-document-sidebar shadow">
+              <div class="offset-lg-2">
+                  <div class="lw-hidden-lg lw-sidebar-versions">
+                      <ul class="navbar-nav my-2 my-md-0">
+                          <li class="nav-item">
+                              <a class="nav-link" href="#"><span class="fas fa-home"></span> Docs Home</a>
+                          </li>
+
+                          <li class="nav-item">
+                              <a class="nav-link" href="#"><span class="fas fa-envelope"></span> Contact Us</a>
+                          </li>
+                          <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle " href id="langDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">English</a>
+
+                              <div class="dropdown-menu" aria-labelledby="langDropdown">
+                                  <a class=" dropdown-item" href="#">English</a>
+                                  <a class=" dropdown-item" href="#">Russian</a>
+                                  <a class=" dropdown-item" href="#">Filipino</a>
+                              </div>
+                          </li>
+                      </ul>
+                      <hr>
+                  </div>
+
+                  <div class="lw-side-links">
+                      <h4>BoomnApp Help</h4>
+                      <ul>
+                          <li class="lw-article-link lw-menu-parent-item lw-menu-parent-getting-started">
+                              <a class="" href="/index.html">Getting Started</a>
+                          </li>
+                              
+                              <li class="lw-article-link lw-menu-parent-item lw-menu-parent-app-settings">
+                                  <a class="" href="/creating-first-application.html">Creating the first application</a>
+                              </li>
+                              
+                              <li class="lw-article-link lw-menu-parent-item lw-menu-parent-advanced-settings">
+                                  <a class=" lw-active-article" href="#">Add Application Screens</a>
+                              </li>
+
+                              <li class="lw-article-link lw-menu-parent-item lw-menu-parent-integration-with-figma">
+                                  <a class="" href="#">Integration with Figma</a>
+                              </li>
+
+                              <li class="lw-article-link lw-menu-parent-item lw-menu-parent-menu">
+                                  <a class="" href="#">Side menu</a>
+                              </li>
+
+                              <li class="lw-article-link lw-menu-parent-item lw-menu-parent-languages">
+                                  <a class="" href="#">Languages</a>
+                              </li>
+
+                              <li class="lw-article-link lw-menu-parent-item lw-menu-parent-messages">
+                                  <a class="" href="#">Push messages</a>
+                              </li>
+
+                              <li class="lw-article-link lw-menu-parent-item lw-menu-parent-low-code">
+                                  <a class="" href="#">Low Code</a>
+                              </li>
+
+                              <li class="lw-article-link lw-menu-parent-item lw-menu-parent-components">
+                                  <a class="" href="#">Components</a>
+                              </li>
+
+                              <li class="lw-article-link lw-menu-parent-item lw-menu-parent-database">
+                                  <a class="" href="#">Database</a>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+              </nav>
+              <!-- /SIDEBAR SECTIONS -->
+              <!-- CONTENT SECTIONS -->
+              <main role="main" class="col-lg-9 offset-lg-3 lw-document-body">
+                  <div class="lw-cover-page">
+                      <img class="lw-project-logo-print d-none d-print-block" src="images/logo.png" alt>
+                      <h2 class="lw-project-title d-none d-print-block">Managing Admin Panel</h2>
+                      <!-- show info when project is inactive -->
+
+                      <!-- /show info when project is inactive -->
+                      <h1 class="lw-article-title">Getting Started</h1>
+
+                      <hr class="mb-4">
+                  </div>
+                  
+                  <div id="lwIndexContent">
+                      <!-- TABLE OF CONTENT RESULT -->
+                      <h3 class="lw-document-heading mb-3" id="getting-started-en">Getting Started</h3>
+                      <div class="lw-article-description mb-4">
+                          <h1>Build any mobile app with no code</h1>
+
+                          <blockquote>
+                              <p>To start creating your application, you need to create screens, configure logic and think about what these screens should do and what data they will need to display and save.</p>
+                          </blockquote>
+
+                          <div data-oembed-url="https://youtube.com">
+                              <div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen scrolling="no" src="https://www.youtube.com" style="top: 0; left: 0; width: 100%; height: 100%; position: absolute; border: 0;" tabindex="-1"></iframe></div>
+                          </div>
+
+                          <h2> </h2>
+
+                          <h2>Terms and designations</h2>
+
+                          <ul>
+                           <li><strong>Screens</strong> – pages of your application</li>
+                           <li><strong>Components</strong> – The building blocks of the Nwicode interface.</li>
+                           <li><strong>Actions</strong> – Used to specify what your app should do when you click a particular component.</li>
+                           <li><strong>Database</strong> – the database allows you to enter data to display to app users or to collect the data that they input into the app.</li>
+                       </ul>
+
+                       <h2>Navigating</h2>
+
+                       <p> </p>
+
+                       <p><img alt height="779" src="/images/example.png" width="2048"></p>
+
+                       <p>Canvas</p>
+
+                       <ul>
+                           <li>1. The Canvas is the workspace where you design the screens of your app</li>
+                           <li>2. Navigate in the Canvas using the scroll bar or your trackpad— scroll left and right and zoom in and out</li>
+                       </ul>
+
+                       <h2> </h2>
+
+                       <h2><strong>Low-Code</strong></h2>
+
+                       <p>Nwicode has the ability to integrate code, you can work in a visual editor, and you can add programming if necessary</p>
+
+                       <p> </p>
+
+                       <div data-oembed-url="https://youtube.com">
+                          <div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen scrolling="no" src="https://www.youtube.com" style="top: 0; left: 0; width: 100%; height: 100%; position: absolute; border: 0;" tabindex="-1"></iframe></div>
+                      </div>
+
+                      <h2> </h2>
+
+                      <h2>Branding</h2>
+
+                      <p> </p>
+
+                      <p><img alt height="879" src="images/example.png" width="2048"></p>
+
+                      <h2> </h2>
+
+                      <h2>Managing application languages</h2>
+
+                      <p> </p>
+
+                      <p><img alt height="897" src="images/example.png" width="2048"></p>
+
+                      <p><img alt height="882" src="images/example.png" width="2048"></p>
+
+                      <h2> </h2>
+
+                      <h2>Publication</h2>
+
+                      <p> </p>
+
+                      <p><img alt height="902" src="images/example.png" width="2048"></p>
+
+                      <p>Making an Android App Bundle .aab file from a BoomnApp project</p>
+
+                      <div data-oembed-url="https://youtube.com">
+                          <div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen scrolling="no" src="https://www.youtube.com" style="top: 0; left: 0; width: 100%; height: 100%; position: absolute; border: 0;" tabindex="-1"></iframe></div>
+                      </div>
+
+                      <p> </p></div>                                        <!-- / TABLE OF CONTENT RESULT -->
+                  </div>
+              </main>
+              <!-- /CONTENT SECTIONS -->
+
+          </div>
+
+      </div>
+
+  <!-- Bootstrap core JavaScript
+      ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script type="text/javascript" src="js/vendorlibs-public.js"></script>
+      <script type="text/javascript" src="js/vendorlibs-jquery-typeahead.js"></script>
+      <script type="text/javascript" src="js/highlight.pack.js"></script>
+      
+      <script>
+          $(function() {
+              
+              /* Start Back top */
+              $('main').append('<div id="lwBackToTop" class="btn btn-danger btn-sm"><span class="fa fa-arrow-up"></span> Back to Top</div>');
+              $(window).scroll(function() {
+                  if ($(this).scrollTop() != 0) {
+                      $('#lwBackToTop').fadeIn();
+                  } else {
+                      $('#lwBackToTop').fadeOut();
+                  }
+              });
+
+              $('#lwBackToTop').click(function() {
+                  $("html, body").animate({
+                      scrollTop: 0
+                  }, 800);
+                  return false;
+              });
+              /* End Back top */
+
+              $('.lw-sidebar-toggler').click(function() {
+                  var $html = $('html');
+                  if ($html.hasClass('lw-sidebar-opened')) {
+                      $html.removeClass('lw-sidebar-opened');
+                  } else {
+                      $html.addClass('lw-sidebar-opened');
+                  }
+
+                  return true;
+              });
+
+              $('.lw-document').click(function(e) {
+                  var $html = $('html'),
+                  $this = $(e.target);
+                  if ($html.hasClass('lw-sidebar-opened') &&
+                      (!$this.hasClass('lw-search_articles')) &&
+                      (!$this.parents().hasClass('dropdown'))) {
+                      $html.removeClass('lw-sidebar-opened');
+              }
+              return true;
+          });
+
+              function makeid(length) {
+                  var result = '';
+                  var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+                  var charactersLength = characters.length;
+                  for (var i = 0; i < length; i++) {
+                      result += characters.charAt(Math.floor(Math.random() * charactersLength));
+                  }
+                  return result;
+              }
+
+              var articleTableOfContent = '';
+
+              var tocNewLine,
+              $contentElement,
+              contentTitle,
+              contentLink,
+              dynamicClass,
+              isFirstDone = false;
+
+              var childLevel = 0,
+              paddingRate = 12;
+
+              $("#lwIndexContent h1, #lwIndexContent h2, #lwIndexContent h3, .lw-document-sub-heading").each(function() {
+
+                  $contentElement = $(this);
+                  if (!isFirstDone) {
+                      isFirstDone = true;
+                      return true;
+                  }
+
+                  contentTitle = $contentElement.text();
+          contentLink = makeid(contentTitle.length); //slugText(contentTitle);
+          $contentElement.attr('id', contentLink);
+          var currentTag = $contentElement.prop("tagName");
+          if (currentTag == 'H1') {
+              dynamicClass = 'lw-h1-text';
+          } else if (currentTag == 'H2') {
+              dynamicClass = 'lw-h2-text';
+          } else if (currentTag == 'H3') {
+              dynamicClass = 'lw-h3-text';
+          } else {
+              dynamicClass = 'lw-sub-page-text lw-article-link';
+          }
+
+          tocNewLine = '';
+
+          if (contentTitle.trim() !== '') {
+
+              if ($contentElement.hasClass('lw-document-sub-heading')) {
+                  childLevel = $contentElement.data('child-level') - 1;
+
+                  tocNewLine += "<li class='" + dynamicClass + "' style='margin-left:" + (childLevel * paddingRate) + "px'>" +
+                  "<a class='lw-toc-link' href='#" + contentLink + "'>" +
+                  contentTitle + "</a></li>";
+
+              } else {
+
+                  tocNewLine += "<li class='" + dynamicClass + "' style='margin-left:" + (childLevel * paddingRate + paddingRate) + "px'>" +
+                  "<a class='lw-toc-link' href='#" + contentLink + "'>" +
+                  contentTitle + "</a></li>";
+              }
+
+              articleTableOfContent += tocNewLine;
+          }
+      });
+
+              $(".lw-table-of-content .lw-toc-index").prepend(articleTableOfContent);
+              $(".lw-menu-parent-getting-started>ul").append(articleTableOfContent);
+              $('.lw-index-loader-spinner').hide();
+              if ($('.lw-toc-index').children().length > 1) {
+                  $(".lw-table-of-content").fadeIn();
+              }
+
+
+              $('body .lw-table-of-content .lw-toc-index,body .lw-side-links .lw-menu-parent-item').on('click', "a.lw-toc-link", function(e) {
+                  e.preventDefault();
+                  var position = $($(e.target).attr("href")).offset().top;
+                  $('.lw-toc-link').removeClass('lw-active-article');
+                  $(e.target).addClass('lw-active-article');
+                  $('html, body').animate({
+                      scrollTop: position - ($('.lw-main-navbar').height() + 20)
+                  } /* , speed */ );
+              });
+
+              if (window.innerHeight == 50) {
+                  $('.lw-sidebar-toggler .navbar-toggler-icon').css('display', 'none');
+              }
+          });
+      </script>        
+      
+      <script type="text/javascript">
+          function changePanelHeight() {
+              var docsPanelHeight = window.innerHeight,
+              $navbarTogglerIcon = $('.lw-sidebar-toggler .navbar-toggler-icon');
+              if (docsPanelHeight == 50) {
+                  $navbarTogglerIcon.css('display', 'none');
+              } else if (docsPanelHeight == 500) {
+                  $navbarTogglerIcon.css('display', 'block');
+              }
+          }
+      </script>
+
+
+  </body>
+
+  </html>
